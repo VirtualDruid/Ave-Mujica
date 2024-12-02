@@ -2,6 +2,6 @@
   "extends": "next/core-web-vitals",
   "rules":{
     "react/display-name": "off",
-    "react/jsx-key": [true, { "checkFragmentShorthand": true, "warnOnDuplicates" : true }]
+    "react/jsx-key": ["error", { "checkFragmentShorthand":  true}]
   }
 }
