@@ -1,6 +1,6 @@
 @font-face {
     font-family: elffont-rock;
-    src: url('../public/fonts/elffont-rock.otf') format('opentype');
+    src: url('fonts/elffont-rock.otf') format('opentype');
 }
 @media screen and (min-width:1536px) {
     .result-item {
