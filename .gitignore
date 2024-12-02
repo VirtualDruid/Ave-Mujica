@@ -37,3 +37,4 @@ next-env.d.ts
 src/app/page back.tsx
 src/app/style back.css
 src/app/page back1.tsx
+back/page back.tsx
