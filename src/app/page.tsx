@@ -23,15 +23,17 @@ export default function Home() {
     //today = new Date(2025, 0, 2, 0, 0, 0, 0);
     const _2024_12_1 = new Date(2024, 11, 1, 0, 0, 0, 0);
     let deltaDay = Math.floor(Math.abs(today.getTime() - _2024_12_1.getTime()) / (24 * 60 * 60 * 1000));
-    const fives: any[] = Array(Math.floor(deltaDay / 5));
+    let fives: any[] = Array(Math.floor(deltaDay / 5));
     fives.fill(DAYS_COUNT[4], 0, fives.length);
-    const remiander = DAYS_COUNT[deltaDay % 5];
+    fives = fives.map((e, i) => { e.key = i; return e; });
+    const remainder = DAYS_COUNT[deltaDay % 5];
+    remainder.key = "remainder";
     return (<div style={{ alignItems: "center", justifyItems: "center", width: "100dvw" }}>
         <div style={{ color: "white", fontFamily: "elffont-rock", fontSize: "5dvw" }}>
             {`ㄕˊ ㄐㄧㄢ ㄧˇ  ㄐㄧㄥ ㄍㄨㄛˋ ㄌㄜ˙`}
         </div>
         <div style={{ display: "flex", width: "100dvw", alignContent: "center", justifyContent: "center" }}>
-            {[remiander, ...fives]}
+            {[remainder, ...fives]}
         </div>
     </div>)
 }
