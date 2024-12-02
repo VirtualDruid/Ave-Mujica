@@ -30,7 +30,7 @@ export default function Home() {
         <div style={{ color: "white", fontFamily: "elffont-rock", fontSize: "5dvw" }}>
             {`ㄕˊ ㄐㄧㄢ ㄧˇ  ㄐㄧㄥ ㄍㄨㄛˋ ㄌㄜ˙`}
         </div>
-        <div style={{ display: "flex", width:"100dvw", alignContent: "center", justifyContent: "center" }}>
+        <div style={{ display: "flex", width: "100dvw", alignContent: "center", justifyContent: "center" }}>
             {[remiander, ...fives]}
         </div>
     </div>)
