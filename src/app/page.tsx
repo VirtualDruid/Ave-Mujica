@@ -1,7 +1,7 @@
 'use client';
 import { ReactElement, useEffect, useState } from 'react';
 import dynamic from 'next/dynamic'
-import './style.css';
+/* import './style.css';
 const DARK_RED = "#8B0000";
 const DAYS_COUNT: ((key: string) => ReactElement)[] = [
     (key: string) => (<div suppressHydrationWarning key={key} style={{ marginLeft: "5dvw", color: DARK_RED, fontFamily: "elffont-rock", fontStyle: "italic", fontSize: "7dvw" }}>
@@ -44,7 +44,7 @@ function CountDown() {
         </div>
     </div>);
 }
-const NoSSR = dynamic(()=>Promise.resolve(CountDown), {ssr: false});
+const NoSSR = dynamic(()=>Promise.resolve(CountDown), {ssr: false});*/
 export default function Home() {
-    return (<NoSSR></NoSSR>)
+    return (<div></div>)
 }
